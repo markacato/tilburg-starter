@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  inline-size: 100dvw;
+  background-color: var(--tilburg-color-blue-300);
+
+  .logo {
+    a {
+      display: flex;
+      align-items: center;
+      gap: var(--tilburg-space-column-pig);
+      color: var(--tilburg-color-white);
+      text-decoration: none;
+      font-size: var(--tilburg-typography-font-size-3xl);
+      font-weight: var(--tilburg-typography-font-weight-bold);
+    }
+  }
+}

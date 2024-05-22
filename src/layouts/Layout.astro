@@ -17,6 +17,12 @@ import Navigation from '../components/Navigation'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<link rel="preconnect" href="https://cdn.fonts.net">
+		<link rel="preconnect" href="https://fonts.bunny.net">
+
+		<link href="https://cdn.fonts.net/kit/98d15e86-0ba4-4c49-97a9-a796340ef3f3/98d15e86-0ba4-4c49-97a9-a796340ef3f3.css" rel="stylesheet" />
+		<link href="https://fonts.bunny.net/css?family=roboto:400,500,700" rel="stylesheet" />
 	</head>
 	<body class="tilburg-theme">
 		<header>
@@ -622,6 +628,10 @@ import Navigation from '../components/Navigation'
 				animation-delay: 0s !important;
 			}
 		}
+	}
+
+	body {
+		font-family: var(--tilburg-document-font-family), sans-serif;
 	}
 
 	*,

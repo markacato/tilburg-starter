@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Counter from '../components/Counter';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -60,6 +61,8 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+		<h2 style="text-align: center; margin-block-start: 5rem;">Count me in Zaddy</h2>
+		<Counter client:visible />
 	</main>
 </Layout>
 

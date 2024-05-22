@@ -11,8 +11,12 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.3.4",
+    "@babel/runtime": "^7.24.5",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
+    "@utrecht/component-library-react": "^3.0.1-alpha.41",
+    "@utrecht/components": "^3.0.1-alpha.41",
+    "@utrecht/web-component-library-stencil": "^1.1.1-alpha.41",
     "astro": "^4.8.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

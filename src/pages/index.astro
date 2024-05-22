@@ -1,11 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Counter from '../components/Counter';
+import { Heading } from '@utrecht/component-library-react';
+import { Document } from '@utrecht/component-library-react/dist/css-module';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Gemeente Tilburg</h1>
+		<Document>
+			<Heading level="1">Gemeente Tilburg</Heading>
+		</Document>
 	</main>
 </Layout>

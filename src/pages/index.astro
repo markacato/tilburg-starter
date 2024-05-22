@@ -6,8 +6,8 @@ import { Document } from '@utrecht/component-library-react/dist/css-module';
 
 <Layout title="Welcome to Astro.">
 	<main style="padding: 8rem;">
-		<Document>
-			<Heading level="1">Gemeente Tilburg Utrecht Heading</Heading>
+		<Document client:load>
+			<Heading level="1" client:load>Gemeente Tilburg Utrecht Heading</Heading>
 		</Document>
 	</main>
 </Layout>

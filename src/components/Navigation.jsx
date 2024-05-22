@@ -5,7 +5,7 @@ export default function Navigation() {
         <header>
             <div className="logo">
                 <a href="/">
-                    <img src="/logo.png" alt="Logo" />
+                    <img src="/tilburg-starter/logo.png" alt="Logo" />
                     Open Tilburg
                 </a>
             </div>

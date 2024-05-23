@@ -1,13 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Heading } from '@utrecht/component-library-react';
-import { Document } from '@utrecht/component-library-react/dist/css-module';
+import {
+    Heading,
+    Button,
+    PrimaryActionButton,
+    Paragraph,
+    SubtleButton,
+    Textbox
+} from '@utrecht/component-library-react/dist/css-module';
+import {Document} from '@utrecht/component-library-react/dist/css-module';
+import {Searchbox} from '../components/Searchbox.jsx'
+import {Faq} from '../components/Faq.jsx'
+
+const faqItems = [
+    {
+        label: "Question 1",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus non nunc lacinia gravida"
+    },
+    {
+        label: "Question 2",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus non nunc lacinia gravida"
+    },
+    {
+        label: "Question 3",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus non nunc lacinia gravida"
+    },
+]
 ---
 
+
 <Layout title="Welcome to Astro.">
-	<main style="padding: 8rem;">
-		<Document client:load>
-			<Heading level="1" client:load>Gemeente Tilburg Utrecht Heading</Heading>
-		</Document>
-	</main>
+    <Document client:load>
+        <Heading client:load level="1">Gemeente Tilburg</Heading>
+        <Paragraph>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus non nunc lacinia gravida. Donec
+        </Paragraph>
+
+        <Searchbox client:load />
+        <Faq client:load faqItems={faqItems} />
+    </Document>
 </Layout>

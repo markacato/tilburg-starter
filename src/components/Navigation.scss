@@ -1,57 +1,43 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  inline-size: 100dvw;
-  background-color: var(--tilburg-color-blue-300);
+.tilburg-navigation {
+  margin-inline-end: var(--tilburg-space-column-dog);
 
-  .logo {
-    a {
-      display: flex;
-      align-items: center;
-      gap: var(--tilburg-space-column-pig);
-      color: var(--tilburg-color-white);
-      font-size: var(--tilburg-typography-font-size-2xl);
-      font-weight: var(--tilburg-typography-font-weight-bold);
-      text-decoration: none;
+  ul {
+    display: flex;
+    gap: var(--tilburg-space-column-ant);
+    list-style-type: none;
+  }
+
+  li {
+    display: flex;
+
+    &:first-of-type {
+      a {
+        border-top-left-radius: var(--tilburg-border-radius-md);
+        border-bottom-left-radius: var(--tilburg-border-radius-md);
+      }
+    }
+
+    &:last-of-type {
+      a {
+        border-top-right-radius: var(--tilburg-border-radius-md);
+        border-bottom-right-radius: var(--tilburg-border-radius-md);
+      }
     }
   }
 
-  nav {
-    margin-inline-end: var(--tilburg-space-column-dog);
+  a {
+    display: flex;
+    align-items: center;
+    gap: var(--tilburg-space-column-snail);
+    padding: var(--tilburg-space-column-rat) var(--tilburg-space-column-cat);
+    color: var(--tilburg-color-white);
+    background-color: var(--tilburg-color-blue-400);
+    font-weight: var(--tilburg-typography-font-weight-bold);
+    text-decoration: none;
+    transition: background-color 0.2s cubic-bezier(0.4 0 0.2 / 1);
 
-    ul {
-      display: flex;
-      gap: var(--tilburg-space-column-ant);
-      list-style-type: none;
-    }
-
-    li {
-      display: flex;
-      &:first-of-type {
-        a {
-          border-top-left-radius: var(--tilburg-border-radius-md);
-          border-bottom-left-radius: var(--tilburg-border-radius-md);
-        }
-      }
-
-      &:last-of-type {
-        a {
-          border-top-right-radius: var(--tilburg-border-radius-md);
-          border-bottom-right-radius: var(--tilburg-border-radius-md);
-        }
-      }
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-      gap: var(--tilburg-space-column-snail);
-      padding: var(--tilburg-space-column-rat) var(--tilburg-space-column-cat);
-      color: var(--tilburg-color-white);
-      background-color: var(--tilburg-color-blue-400);
-      font-weight: var(--tilburg-typography-font-weight-bold);
-      text-decoration: none;
+    &:where(:hover, :focus-visible) {
+      background-color: var(--tilburg-color-blue-500);
     }
   }
 }
